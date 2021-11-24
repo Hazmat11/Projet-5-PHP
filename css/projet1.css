@@ -1,0 +1,97 @@
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #26a69a;
+  max-width: fit-content;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 50px;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+}
+
+img{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ee6e73;
+  box-sizing: border-box;
+}
+
+.return{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+a{
+  position: relative;
+  bottom: 5px;
+}
+
+.small{
+  position: relative;
+  top: 6px;
+  right: 3px;
+}
+
+.text{
+  width: 100%;
+  background-color: #26a69a;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #ee6e73;
+  font-size: 25px;
+  text-align: center;
+  min-height: fit-content;
+}
+
+.code{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.link{
+  width: 100%;
+  background-color: #26a69a;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #ee6e73;
+}
+
+.logo:hover{
+  border-style: dotted;
+  border-width: 4px;
+  border-color: #ee6e73;
+}
+
+#sites{
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  max-width: fit-content;
+  margin: 0 auto;
+  width: 100%;
+}
