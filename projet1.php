@@ -24,7 +24,7 @@
          </div>
       </div>
       <div class="return">
-         <a class="waves-effect waves-light btn-large"href="index.html"><i class="small material-icons">arrow_back</i>Return Home</a>
+         <a class="waves-effect waves-light btn-large"href="index.php"><i class="small material-icons">arrow_back</i>Return Home</a>
       </div>
       <div class="text">
          <p>Le principe est le suivant.<br>
