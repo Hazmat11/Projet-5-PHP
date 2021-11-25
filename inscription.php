@@ -1,4 +1,4 @@
-#inscription.php
+<h1>Inscription</h1>
 <form method="post" action="signup.php">
     <input type='email' name='email' />
     <input type='password' name='password' />
