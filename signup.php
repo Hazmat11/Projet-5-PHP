@@ -1,7 +1,7 @@
 #signup.php
 <?php
 require_once "config.php";
-$sql = "INSERT INTO user(email,password,login) VALUES(:email,:password,:login)";
+$sql = "INSERT INTO user(email,password,login) VALUES(:email,SHA1(:password),:login)";
 $dataBinded=array(
     ':email'   => $_POST['email'],
     ':password'=> $_POST['password'],
@@ -10,5 +10,5 @@ $dataBinded=array(
 $pre = $pdo->prepare($sql);
 $pre->execute($dataBinded);
 
-header('Location:index.php');//on le redirige sur la page d'accueil du site !
+// header('Location:index.php');//on le redirige sur la page d'accueil du site !
 ?>
