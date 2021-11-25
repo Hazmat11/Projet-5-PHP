@@ -1,4 +1,3 @@
-#menu.php
 <nav>
     <ul>
         <li>Accueil</li>
