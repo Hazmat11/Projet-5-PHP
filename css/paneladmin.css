@@ -1,0 +1,9 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.bloc_user{
+  border-width: 10px;
+  border-color: red;
+}
