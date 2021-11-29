@@ -37,9 +37,9 @@
             Le but du jeu, bien sûr, est de trouver le nombre mystère en un minimum de coups.
          </p>
       </div>
+      <div class="row">
       <div class="parallax-container col s10 m6 l3 offset-l3">
          <div class="parallax"><img src="img\parallax1.jpg" alt=""></div>
-         <div class="row">
             <div class="code">
                <img src="img\projet 1.5.png">
                <img src="img\projet 1.6.png">

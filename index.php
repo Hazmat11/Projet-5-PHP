@@ -13,51 +13,55 @@
       <script type="text/javascript" src="js/materialize.min.js"></script>
    </head>
    <body>
+
       <button id="icon" class="medium material-icons">brightness_7</button>
       <div class="sidenavi">
-         <nav>&nbspNous contacter</nav>
-         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-         <ul id="slide-out" class="sidenav" style="overflow-x: hidden;">
-            <li>
-               <div class="user-view">
-                  <div class="background">
-                  </div>
-                  <a href="#user"><img class="circle" src="img\logo.png"></a>
-               </div>
-            </li>
-            <div class="row">
-               <form class="col s12">
-               <div class="row">
-                  <div class="input-field col s6">
-                     <input id="first_name" type="text" class="validate">
-                     <label for="first_name">Prénom</label>
-                  </div>
-                  <div class="input-field col s6">
-                     <input id="last_name" type="text" class="validate">
-                     <label for="last_name">Nom</label>
-                  </div>
-               </div>
-            </div>
-            <li>
-               <div class="divider"></div>
-            </li>
-            <div class="row">
-               <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">Email</label>
-               </div>
-            </div>
-            <div class="row">
-               <div class="input-field col s12">
-                  <textarea id="textarea1" class="materialize-textarea"></textarea>
-                  <label for="textarea1">Texte</label>
-               </div>
-            </div>
-            <button class="btn waves-effect waves-light" type="Submit" name="action">Envoyer
-            <i class="material-icons right">send</i>
-            </button>
-         </ul>
-      </div>
+        <FORM method="POST" action="envoi.php">
+          <nav>&nbspNous contacter</nav>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">contacts</i></a>
+          <ul id="slide-out" class="sidenav" style="overflow-x: hidden;">
+             <li>
+                <div class="user-view">
+                   <div class="background">
+                   </div>
+                   <a href="#user"><img class="circle" src="img\logo.png"></a>
+                </div>
+             </li>
+             <div class="row">
+                <form class="col s12">
+                <div class="row">
+                   <div class="input-field col s6">
+                      <input id="first_name" type="text" class="validate">
+                      <label for="first_name">Prénom</label>
+                   </div>
+                   <div class="input-field col s6">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Nom</label>
+                   </div>
+                </div>
+             </div>
+             <li>
+                <div class="divider"></div>
+             </li>
+             <div class="row">
+                <div class="input-field col s12">
+                   <input id="email" type="email" class="validate">
+                   <label for="email">Email</label>
+                </div>
+             </div>
+             <div class="row">
+                <div class="input-field col s12">
+                   <textarea id="textarea1" class="materialize-textarea"></textarea>
+                   <label for="textarea1">Texte</label>
+                </div>
+             </div>
+             <button class="btn waves-effect waves-light" type="Submit" name="action">Envoyer
+             <i class="material-icons right">send</i>
+             </button>
+          </ul>
+       </div>
+        </form>
+
       <div class="row">
          <div class="card col s10 offset-s1 m6 l3 offset-l3">
             <div class="card-image waves-effect waves-block waves-light">
