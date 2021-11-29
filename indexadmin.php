@@ -16,6 +16,14 @@
   <div class="bloc_user">
     <h2><span class="email"><?php echo $user['email'] ?></span></h2>
     <?php echo $user['login']." ".$user['password'] ?>
+    <form class="" action="modify_email.php" method="post">
+      <input type="hidden" name="id" value="<?php echo $user['id'] ?>">
+      <button type="submit" name="button">Modifier email</button>
+    </form>
+    <form class="" action="delete_user.php" method="post">
+      <input type="hidden" name="id" value="<?php echo $user['id'] ?>">
+      <button type="submit" name="button">Supprimer</button>
+    </form>
   </div>
   <?php } ?>
  </body>
