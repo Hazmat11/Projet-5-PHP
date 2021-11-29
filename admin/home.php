@@ -10,13 +10,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <div class="sucess">
     <h1>Bienvenue <?php echo $_SESSION['username']; ?>!</h1>
-    <p>C'est votre espace utilisateur.</p>
-    <a href="logout.php">Déconnexion</a>
+    <p>C'est votre espace admin.</p>
+    <a href="add_user.php">Add user</a> |
+    <a href="#">Update user</a> |
+    <a href="#">Delete user</a> |
+    <a href="../logout.php">Déconnexion</a>
+    </ul>
     </div>
   </body>
 </html>

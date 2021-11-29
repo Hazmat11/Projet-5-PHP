@@ -1,28 +1,50 @@
-<link rel="stylesheet" href="css/accueil.css">
-
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
 <?php
-  require_once "config.php";
-  $sql = "SELECT * FROM user WHERE email='".$_POST['email']."' AND password='".$_POST['password']."'";
-  $pre = $pdo->prepare($sql);
-  $pre->execute();
-  $user = current($pre->fetchAll(PDO::FETCH_ASSOC));//current prend la première ligne du tableau
-?>
-  <div class="errorpw">
-    <?php
-      if(empty($user)){ //vérifie si le resultat est vide !
-        echo "Email ou mot de passe incorrect !";
+require('config.php');
+session_start();
+if (isset($_POST['username'])){
+  $username = stripslashes($_REQUEST['username']);
+  $username = mysqli_real_escape_string($conn, $username);
+  $_SESSION['username'] = $username;
+  $password = stripslashes($_REQUEST['password']);
+  $password = mysqli_real_escape_string($conn, $password);
+    $query = "SELECT * FROM `users` WHERE username='$username'
+  and password='".hash('sha256', $password)."'";
 
-     }else{
-          $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
-          header('Location:index.php');//on le redirige sur la page d'accueil du site !
-     }
-    ?>
-    <div class="signup">
-      <h1>Connexion</h1>
-      <form method="post" action="login.php">
-        <input type='email' name='email' />
-        <input type='password' name='password' />
-        <input type='submit' value='Me connecter' />
-      </form>
-    </div>
-  </div>
+  $result = mysqli_query($conn,$query) or die(mysql_error());
+
+  if (mysqli_num_rows($result) == 1) {
+    $user = mysqli_fetch_assoc($result);
+    // vérifier si l'utilisateur est un administrateur ou un utilisateur
+    if ($user['type'] == 'admin') {
+      header('location: admin/home.php');
+    }else{
+      header('location: index.php');
+    }
+  }else{
+    $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
+  }
+}
+?>
+<form class="box" action="" method="post" name="login">
+<h1 class="box-logo box-title">
+  <a href="https://waytolearnx.com/">WayToLearnX.com</a>
+</h1>
+<h1 class="box-title">Connexion</h1>
+<input type="text" class="box-input" name="username" placeholder="Nom d'utilisateur">
+<input type="password" class="box-input" name="password" placeholder="Mot de passe">
+<input type="submit" value="Connexion " name="submit" class="box-button">
+<p class="box-register">Vous êtes nouveau ici?
+  <a href="register.php">S'inscrire</a>
+</p>
+<?php if (! empty($message)) { ?>
+    <p class="errorMessage"><?php echo $message; ?></p>
+<?php } ?>
+</form>
+</body>
+</html>
