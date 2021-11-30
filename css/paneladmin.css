@@ -1,9 +1,27 @@
 body{
   background-color: black;
   color: white;
+  margin: 0;
 }
 
 .bloc_user{
-  border-width: 10px;
+  border-width: 5px;
   border-color: red;
+  border-style: solid;
+  font-size: 20px;
+  padding: 7px;
+}
+
+.cardtxt{
+  border-width: 5px;
+  border-color: blue;
+  border-style: solid;
+  padding: 7px;
+}
+
+.cardimg{
+  border-width: 5px;
+  border-color: green;
+  border-style: solid;
+  padding: 7px;
 }

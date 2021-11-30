@@ -61,30 +61,65 @@
           </ul>
        </div>
         </form>
-
       <div class="row">
          <div class="card col s10 offset-s1 m6 l3 offset-l3">
             <div class="card-image waves-effect waves-block waves-light">
-               <img class="activator" src="img\avatar-1.jpg">
+               <img class="activator" src="<?php require_once "config.php"; ?>
+                 <?php
+                 $sql = "SELECT * FROM cards WHERE id=8";
+                 $pre = $pdo->prepare($sql);
+                 $pre->execute();
+                 $data = $pre->fetchAll(PDO::FETCH_ASSOC);
+
+                 foreach($data as $cards){ ?>
+                   <?php echo $cards['imgcard'] ?>
+              <?php } ?>">
             </div>
             <div class="card-reveal">
                <span class="card-title grey-text text-darken-4">
                   <h2>Etienne BERTRAND</h2>
                   <i class="material-icons right">close</i>
                </span>
-               <p>Je m'appelle Etienne, j'ai 19 ans et c'est ma première année en tant que G.Tech au Gaming Campus. Après avoir fait un bac S pitoyable et avoir redoublé, j'ai décidé de prendre comme matière Géopolitique et SVT... Ce qui n'à absolument aucun rapport avec le code et l'informatique, mais bon.. En tout cas je suis content d'avoir intégré cette école génial !</p>
-            </div>
-         </div>
+               <p><?php require_once "config.php"; ?>
+                 <?php
+                 $sql = "SELECT * FROM cards WHERE id=8";
+                 $pre = $pdo->prepare($sql);
+                 $pre->execute();
+                 $data = $pre->fetchAll(PDO::FETCH_ASSOC);
+
+                 foreach($data as $cards){ ?>
+                   <?php echo $cards['txt'] ?></p>
+              <?php } ?>
+                </div>
+                  </div>
          <div class="card col s10 offset-s1 m6 l3">
             <div class="card-image waves-effect waves-block waves-light">
-               <img class="activator" src="img\Photo Keziah.jpg">
+               <img class="activator" src="<?php require_once "config.php"; ?>
+                 <?php
+                 $sql = "SELECT * FROM cards WHERE id=9";
+                 $pre = $pdo->prepare($sql);
+                 $pre->execute();
+                 $data = $pre->fetchAll(PDO::FETCH_ASSOC);
+
+                 foreach($data as $cards){ ?>
+                   <?php echo $cards['imgcard'] ?>
+              <?php } ?>">
             </div>
             <div class="card-reveal">
                <span class="card-title grey-text text-darken-4">
                   <h2>Keziah Bartolini</h2>
                   <i class="material-icons right">close</i>
                </span>
-               <p>Je m'appelle Keziah Bartolini et je suis actuellement étudiant en 1 ère année au Gaming Campus, à Lyon. Je suis venu ici ayant comme but de devenir développeur de jeux vidéos, car c'est quelque chose qui m'intéresse , et je suis notamment passioné de jeux vidéos.</p>
+               <p><?php require_once "config.php"; ?>
+                 <?php
+                 $sql = "SELECT * FROM cards WHERE id=9";
+                 $pre = $pdo->prepare($sql);
+                 $pre->execute();
+                 $data = $pre->fetchAll(PDO::FETCH_ASSOC);
+
+                 foreach($data as $cards){ ?>
+                   <?php echo $cards['txt'] ?></p>
+              <?php } ?>
             </div>
          </div>
       </div>
