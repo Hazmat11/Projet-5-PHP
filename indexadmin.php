@@ -39,13 +39,29 @@
   </div>
 </div>
   <?php } ?>
-  <div class="img">
-    <form method="post" action="upload_file.php" enctype="multipart/form-data">
-      <input type='file' name='image'>
-      <button type="submit" name="button">Envoyer</button>
+  <h1>Changer le texte des cartes de l'index</h1>
+  <div class="cardtxt">
+    <form class="" action="txtindex1.php" method="post" >
+      <input type="text" name="txt" value="" placeholder="Texte Descriptif">
+      <button type="submit" name="button">Changer le texte de la Carte 1</button>
+    </form>
+    <form class="" action="txtindex2.php" method="post">
+      <input type="text" name="txt" value="" placeholder="Texte Descriptif">
+      <button type="submit" name="button">Changer le texte de la Carte 2</button>
     </form>
   </div>
-  <div class="backgroundimg">
+  <h1>Changer les images des cartes</h1>
+  <div class="cardimg">
+    <form class="" action="imgcard1.php" method="post" enctype="multipart/form-data">
+      <input type='file' name='image'>
+      <button type="submit" name="button">Upload Carte 1</button>
+    </form>
+    <form class="" action="imgcard2.php" method="post" enctype="multipart/form-data">
+      <input type='file' name='image'>
+      <button type="submit" name="button">Upload Carte 2</button>
+    </form>
+  </div>
+<div class="backgroundimg">
     <form class="" action="backgroundimg.php" method="post">
       <input type="text" name="RGB1" value="">
       <input type="text" name="RGB2" value="">
