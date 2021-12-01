@@ -1,27 +1,16 @@
 body{
   background-color: black;
   color: white;
-  margin: 0;
 }
 
-.bloc_user{
+.user{
   border-width: 5px;
+  border-style: solid;
   border-color: red;
-  border-style: solid;
-  font-size: 20px;
-  padding: 7px;
+  padding: 10px;
+  max-width: fit-content;
 }
 
-.cardtxt{
-  border-width: 5px;
-  border-color: blue;
-  border-style: solid;
-  padding: 7px;
-}
-
-.cardimg{
-  border-width: 5px;
-  border-color: green;
-  border-style: solid;
-  padding: 7px;
+.delete{
+background-color: #C60C0C;
 }
