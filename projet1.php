@@ -13,9 +13,9 @@
    <body>
       <div class="parallax-container">
          <div class="parallax"><img src="img\parallax1.jpg" alt=""></div>
-         <p>
+
          <h1>Projet 1 / Plus ou moins</h1>
-         </p>
+         
          <div class="carousel">
             <a class="carousel-item" href="#one!"><img src="img\Projet 1.1.PNG"></a>
             <a class="carousel-item" href="#two!"><img src="img\Projet 1.2.PNG"></a>
@@ -37,8 +37,8 @@
             Le but du jeu, bien sûr, est de trouver le nombre mystère en un minimum de coups.
          </p>
       </div>
-      <div class="row">
-      <div class="parallax-container col s10 m6 l3 offset-l3">
+
+      <div class="parallax-container">
          <div class="parallax"><img src="img\parallax1.jpg" alt=""></div>
             <div class="code">
                <img src="img\projet 1.5.png">

@@ -4,6 +4,13 @@
    <link rel="stylesheet" href="css\paneladmin.css">
  </head>
  <body>
+   <?php
+   
+  if($_SESSION['email'] != 'ebertrand@gaming.tech' ){
+    header('Location:index.php');
+    }
+   ?>
+
   <h1>Liste des utilisateurs</h1>
   <?php
   $sql = "SELECT * FROM user";

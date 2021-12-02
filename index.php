@@ -61,6 +61,9 @@
           </ul>
        </div>
         </form>
+      <a href = "inscription.php" > <button type="Submit" name="action" > Connexion </button> </a>
+
+        <h1>Présentation des projets du binôme</h1>
       <div class="row">
          <div class="card col s10 offset-s1 m6 l3 offset-l3">
             <div class="card-image waves-effect waves-block waves-light">
@@ -124,18 +127,15 @@
          </div>
       </div>
       <div class="buttons">
-         <div class="projet1 col s10 offset-s1 m6 l3 offset-l3">
-            <a class="waves-effect waves-light btn-large" href="projet1.html"><i class="material-icons right">filter_1</i>Projet 1</a>
+         <div class="projet1">
+            <a class="waves-effect waves-light btn-large" href="projet1.php"><i class="material-icons right">filter_1</i>Projet 1</a>
          </div>
-         <div class="projet2 col s10 offset-s1 m6 l3">
+         <div class="projet2">
             <a class="waves-effect waves-light btn-large" href="projet2.html"><i class="material-icons right">filter_2</i>Projet 2</a>
          </div>
-         <div class="projet3 col s10 offset-s1 m6 l3">
+         <div class="projet3">
             <a class="waves-effect waves-light btn-large" href="projet3.html"><i class="material-icons right">filter_3</i>Projet 3</a>
          </div>
       </div>
-      <p>
-      <h1>Présentation des projets du binôme</h1>
-      </p>
    </body>
 </html>
