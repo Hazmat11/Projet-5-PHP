@@ -13,6 +13,7 @@
    <body>
       <div class="parallax-container">
          <div class="parallax"><img src="img\parallax1.jpg" alt=""></div>
+<<<<<<< HEAD
          <p>
          <h1><?php require_once "config.php"; ?>
             <?php
@@ -25,6 +26,11 @@
               <?php echo $projet['titre'] ?>
          <?php } ?></h1>
          </p>
+=======
+
+         <h1>Projet 1 / Plus ou moins</h1>
+         
+>>>>>>> 21b43ff9312c5cac3c92a6761bf44b834a522d47
          <div class="carousel">
             <a class="carousel-item" href="#one!"><img src="<?php require_once "config.php"; ?>
               <?php
@@ -84,7 +90,12 @@
          <?php } ?>
          </p>
       </div>
+<<<<<<< HEAD
       <div class="parallax-container ">
+=======
+
+      <div class="parallax-container">
+>>>>>>> 21b43ff9312c5cac3c92a6761bf44b834a522d47
          <div class="parallax"><img src="img\parallax1.jpg" alt=""></div>
             <div class="code">
                <img src="<?php require_once "config.php"; ?>

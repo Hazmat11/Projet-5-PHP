@@ -1,4 +1,6 @@
+
 <?php
+    SESSION_start();
     $pdo = new PDO(
       'mysql:host=localhost;dbname=projet 5;',
       'root',

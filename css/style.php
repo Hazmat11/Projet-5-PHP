@@ -31,7 +31,7 @@ body{
 }
 
 button{
-  background-color: #ee6e73;
+  background-color: #781515;
 }
 
 nav{

@@ -9,9 +9,14 @@
 ?>
   <div class="errorpw">
     <?php
+
+
       if (($_POST['email']=='ebertrand@gaming.tech') AND ($_POST['password']=='admin123')) {
+        $_SESSION['email'] = 'ebertrand@gaming.tech';
         header('Location:indexadmin.php');
       }
+
+
       if(empty($user)){ //vérifie si le resultat est vide !
         echo "Email ou mot de passe incorrect !";
       }
