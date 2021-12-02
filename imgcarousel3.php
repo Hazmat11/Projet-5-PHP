@@ -29,5 +29,5 @@ $pre->execute();
 $sql = "UPDATE projet SET carousel4 = 'img/$varImg4' WHERE id = 3";
 $pre = $pdo->prepare($sql);
 $pre->execute();
-//header('Location:indexadmin.php');//on le redirige sur la page d'accueil du site !
+header('Location:indexadmin.php');//on le redirige sur la page d'accueil du site !
 ?>

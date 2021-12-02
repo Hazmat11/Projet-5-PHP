@@ -57,3 +57,7 @@ h1{
   border-style: solid;
   padding: 7px;
 }
+
+.delete{
+  color: red;
+}

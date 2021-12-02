@@ -63,9 +63,9 @@
   <h2>Changer color gradient</h2>
   <div class="backgroundimg">
     <form class="" action="backgroundimg.php" method="post">
-      <input type="text" name="RGB1" value="">
-      <input type="text" name="RGB2" value="">
-      <input type="text" name="RGB3" value="">
+      <input type="text" name="RGB1" value="" placeholder="Code RGB sans #">
+      <input type="text" name="RGB2" value="" placeholder="Code RGB sans #">
+      <input type="text" name="RGB3" value="" placeholder="Code RGB sans #">
       <button type="submit" name="button">Submit</button>
     </form>
   </div>
@@ -92,15 +92,21 @@
     <h1>Changer Texte Projet1</h1>
     <div class="p1paragraphe">
       <form class="" action="paragraphe1.php" method="post">
-        <input type='text' name='txt' value="">
+        <input type='text' name='txt' value="" placeholder="Paragraphe (max:800char)">
         <button type="submit" name="button">Upload paragraphe</button>
       </form>
     </div>
     <h1>Changer Titre Projet1</h1>
     <div class="titrep1">
       <form class="" action="titrep1.php" method="post">
-        <input type='text' name='txt' value="">
+        <input type='text' name='txt' value="" placeholder="Titre du projet">
         <button type="submit" name="button">Upload titre</button>
+      </form>
+    </div>
+    <div class="delete">
+      <form class="" action="delete1.php" method="post">
+        <input type="hidden" name="id" value="">
+        <button class="delete" type="submit" name="button">Supprimer le projet</button>
       </form>
     </div>
   </div>
@@ -127,15 +133,21 @@
     <h1>Changer Texte Projet2</h1>
     <div class="p2paragraphe">
       <form class="" action="paragraphe2.php" method="post">
-        <input type='text' name='txt' value="">
+        <input type='text' name='txt' value="" placeholder="Paragraphe (max:800char)">
         <button type="submit" name="button">Upload paragraphe</button>
       </form>
     </div>
     <h1>Changer Titre Projet2</h1>
     <div class="titrep2">
       <form class="" action="titrep2.php" method="post">
-        <input type='text' name='txt' value="">
+        <input type='text' name='txt' value="" placeholder="Titre du projet">
         <button type="submit" name="button">Upload titre</button>
+      </form>
+    </div>
+    <div class="delete">
+      <form class="" action="delete2.php" method="post">
+        <input type="hidden" name="id" value="">
+        <button class="delete" type="submit" name="button">Supprimer le projet</button>
       </form>
     </div>
   </div>
@@ -162,15 +174,21 @@
     <h1>Changer Texte Projet3</h1>
     <div class="p3paragraphe">
       <form class="" action="paragraphe3.php" method="post">
-        <input type='text' name='txt' value="">
+        <input type='text' name='txt' value="" placeholder="Paragraphe (max:800char)">
         <button type="submit" name="button">Upload paragraphe</button>
       </form>
     </div>
     <h1>Changer Titre Projet3</h1>
     <div class="titrep3">
       <form class="" action="titrep3.php" method="post">
-        <input type='text' name='txt' value="">
+        <input type='text' name='txt' value="" placeholder="Titre du projet">
         <button type="submit" name="button">Upload titre</button>
+      </form>
+    </div>
+    <div class="delete">
+      <form class="" action="delete3.php" method="post">
+        <input type="hidden" name="id" value="">
+        <button class="delete" type="submit" name="button">Supprimer le projet</button>
       </form>
     </div>
   </div>

@@ -17,5 +17,5 @@ $pre->execute();
 $sql = "UPDATE projet SET image2 = 'img/$varImg2' WHERE id = 1";
 $pre = $pdo->prepare($sql);
 $pre->execute();
-//header('Location:indexadmin.php');//on le redirige sur la page d'accueil du site !
+header('Location:indexadmin.php');//on le redirige sur la page d'accueil du site !
 ?>
