@@ -84,8 +84,7 @@
          <?php } ?>
          </p>
       </div>
-      <div class="row">
-      <div class="parallax-container col s10 m6 l3 offset-l3">
+      <div class="parallax-container ">
          <div class="parallax"><img src="img\parallax1.jpg" alt=""></div>
             <div class="code">
                <img src="<?php require_once "config.php"; ?>
@@ -110,6 +109,5 @@
               <?php } ?>">
             </div>
          </div>
-      </div>
    </body>
 </html
